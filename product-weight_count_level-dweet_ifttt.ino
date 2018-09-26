@@ -66,8 +66,8 @@ void playBuzzer(){
 }
 
 /// for wi-fi
-const char* ssid     = "TP-LINK";
-const char* password = "bappaditya";
+const char* ssid     = "xxxxxx";      // your SSID here
+const char* password = "xxxxxxxxxx";  // your password here
 const int httpPort = 80;
 WiFiClient client;
 
