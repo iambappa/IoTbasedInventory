@@ -73,13 +73,13 @@ WiFiClient client;
 
 /// for dweet
 const char* host = "www.dweet.io";
-const char* thing  = "test_bappa1";
+const char* thing  = "xxxxxxx";           // your thing name here
 const char* thing_content1 = "Rice-gms.";  
 const char* thing_content2 = "Eggs-count";
 const char* thing_content3 = "water-level-cm.";
 
 /// for IFTTT
-const char* key = "oVIZNFWGHtSDqz1xwQUYjujclbgWs0SSFU2729b0Jc8";
+const char* key = "xxxxxxxxxxxxxx";     // your IFTTT key here
 const char* host1 = "maker.ifttt.com";
 const long sendPeriod2 = 60000L; // 1 minute for IFTTT
 
