@@ -3,15 +3,13 @@ Weight, Counter, and Level in 1 code
 By- Bappaditya
 simplified version- weight+count+level test
 */
-//#define D0 16
-//#define D1 5
 
 #include <ESP8266WiFi.h>
 #include "HX711.h" // Load Cell Amplifier
 HX711 cell(D0, D1); // (data, CLK) Amplifier is connected to these pins on the NodeMCU ESP8266 Board
 
 /// for weight
-float scale = (8439000-8334400)/500.0f;   // for 10kg. scale
+float scale = (8439000-8334400)/500.0f;   // for 10kg. scale... Typically around 210
 float weight = 0;
 
 /// for counter
@@ -147,7 +145,7 @@ void setup() {
 void loop() {
   delay(3000);
   /// get weight
-  weight=(cell.read()-8334400)/scale;   
+  weight=(cell.read()-8334400)/scale;   // substracting zero read 8334400, might be diff for you
 
   /// get counter
   // read the value from sensor A, B, C, D:  
