@@ -30,7 +30,7 @@ int countEggs(){
     sensorValue[j] = analogRead(sensorPin);
     Serial.println(sensorValue[j]);
     digitalWrite(enable[j], LOW);
-    if(sensorValue[j]>785)
+    if(sensorValue[j]>785)          // depending on light intensity change "785"
       {nos[j]=0;}
       else
       {nos[j]=1;}
